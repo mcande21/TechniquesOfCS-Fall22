@@ -7,6 +7,7 @@ public class Investment {
     public static void main(String [] args) {
 
         System.out.println(investment(1.0, 1.0, 1, (int)1e9));
-        System.out.println(investment(1000, 0.03, 10, 365));
+        System.out.println(investment(1.0, 1.0, 1, (int)1e9));
+        System.out.println(investment(1.0, 1.0, 1, (int)1e9));
     }
 }
