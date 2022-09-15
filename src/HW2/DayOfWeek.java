@@ -20,7 +20,7 @@ public class DayOfWeek {
         int day_value = kbd.nextInt();
         System.out.print("Enter in the year(yyyy): ");
         int year_value = kbd.nextInt();
-        System.out.printf("This date falls on the %.0f day of the week.",
+        System.out.printf("This date falls on the %.0f day of the week" + "😂",
                 dayoftheweek(month_value, day_value, year_value));
 
     }
