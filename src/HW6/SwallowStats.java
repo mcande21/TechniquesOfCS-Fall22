@@ -5,9 +5,11 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Scanner;
 
+import static java.lang.Double.parseDouble;
+
 public class SwallowStats {
 
-    public static void swallow_stats() {
+    public static double swallow_stats() {
 
         // connect to the webpage of speeds
         URL url = null; // null is the "nothing value"
@@ -33,20 +35,21 @@ public class SwallowStats {
                 break;
 
             // read a line of the Web Site
-            if (line.indexOf("#") == 0) {
+            if (line.indexOf("#") >= 0 || line.length() == 0) {
                 line = s.nextLine();
             } else if (line.length() != 0) {  // modify condition if length of the line is zero
-                sum = sum + Double.parseDouble(line);
+                sum = sum + parseDouble(line);
                 count++;
                 line = s.nextLine();
 
             }
         }
+        return (sum/count);
     }
 
     public static void main(String[] args){
-       //System.out.printf("Average swallow speeds is %.2f\n", swallow_stats());
-        swallow_stats();
+       System.out.printf("Average swallow speeds is %.2f\n", swallow_stats());
+
 
 
     }
