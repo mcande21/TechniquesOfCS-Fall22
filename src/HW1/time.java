@@ -1,4 +1,4 @@
-package Homeworks;
+package HW1;
 
 public class time {
     public static String display_clock(int hour, int minute){

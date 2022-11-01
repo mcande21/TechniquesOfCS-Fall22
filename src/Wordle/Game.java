@@ -61,7 +61,9 @@ public class Game {
 
     public static void main(String[] args) {
         String [] words = load_words("http://10.60.15.25/~ehar/cs219/wordle-nyt-solutions.txt", 2309);
+        System.out.println(words);
 
+        /*
         Random rng = new Random();
         // pick a random words
         rng.setSeed(23);
@@ -73,5 +75,6 @@ public class Game {
         System.out.println(indexOf(word, words));
 
         System.out.println(bsearch(words, word, 0, words.length-1));
+        */
     }
 }
