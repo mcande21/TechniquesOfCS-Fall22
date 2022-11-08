@@ -44,7 +44,9 @@ public class Exam {
         int i = 0;
 
         while (s.hasNextLine()){
+
             words[i++] = s.nextLine();
+
         }
         String [] pali = new String [9];
         int counter = 0;
